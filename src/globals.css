@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  @apply
+  bg-primary-91
+}
+
+.clickable {
+  @apply
+  active:opacity-70
+  hover:saturate-50
+  hover:brightness-[2]
+  transition
+  duration-200
+}
+
+nav > a {
+  @apply
+  font-semibold
+  text-secondary-15
+  hover:text-orange-700
+  clickable
+}
+
+h1, h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1 {
+  @apply
+  text-2xl
+  font-bold
+  text-secondary-15
+  sm:text-5xl
+}
+
+h2 {
+  @apply
+  text-xl
+  font-semibold
+  text-secondary-15
+  md:text-3xl
+}
+
+.btn {
+  @apply
+  px-5 py-3
+  rounded-lg
+  shadow-lg
+  clickable
+}
+
+.cta {
+  @apply
+  bg-secondary-15
+  text-white
+  font-bold
+}
